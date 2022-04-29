@@ -1,7 +1,7 @@
 variable "project" {
   type        = string
   description = "The project in which the resource belongs"
-  default     = "loganc-playground"
+  default     = "velero-testing"
 }
 
 ############################################################################

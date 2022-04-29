@@ -27,6 +27,6 @@ You can spin up a secondary kind cluster to test restores.
 
 Re-install velero and point it to the backup bucket - it will detect the backup from there.
 
-`velero restore describe dev-namespace-backup`
+`velero restore create --from-backup dev-namespace-backup-3`
 
-
+!!! Gotta have workload identity on the cluster enabled if you want to run the terraform as is !!!

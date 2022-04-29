@@ -71,6 +71,7 @@ module "iam_service_accounts" {
 module "bucket" {
   source  = "terraform-google-modules/cloud-storage/google//modules/simple_bucket"
   version = "3.2.0"
+  force_destroy = false
 
   name            = format("%s-%s-%s-backup", var.project, local.service, local.cluster)
   project_id      = var.project
