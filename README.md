@@ -1,4 +1,4 @@
-## **Bucket Creation**
+### **Bucket Creation**
 
 Velero requires an object storage bucket in which to store backups, preferably unique to a single Kubernetes cluster. Create a GCS bucket, replacing the <YOUR_BUCKET> placeholder with the name of your bucket:
 
@@ -8,7 +8,7 @@ BUCKET=<YOUR_BUCKET>
 gsutil mb gs://$BUCKET/
 ```
 
-## **Service Account Creation**
+### **Service Account Creation**
 
 If you’ll be using Velero to backup multiple clusters with multiple GCS buckets, it may be desirable to create a unique username per cluster rather than the default velero.
 
@@ -60,7 +60,7 @@ gcloud iam service-accounts keys create credentials-velero \
     --iam-account $SERVICE_ACCOUNT_EMAIL
 ```
 
-## **Velero Installation**
+### **Velero Installation**
 
 Install velero via the cli or helm chart.
 
